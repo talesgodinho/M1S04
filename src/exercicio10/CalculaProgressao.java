@@ -20,15 +20,15 @@ public class CalculaProgressao {
         Scanner input = new Scanner(System.in);
         System.out.println("\n*** Calculadora de P.A. e P.G. ***");
 
-        System.out.print("Informe um número inteiro entre 0 e 10: ");
+        System.out.print("Informe um número inteiro: ");
         int num = Integer.parseInt(input.nextLine());
 
         System.out.print("Informe a razão inteira da progressão: ");
         int razao = Integer.parseInt(input.nextLine());
 
-         System.out.print("\nOpções:\n1 - P.A.\n2 - P.G\nDigite a opção desejada: ");
+        System.out.print("\nOpções:\n1 - P.A.\n2 - P.G\nDigite a opção desejada: ");
         int op = Integer.parseInt(input.nextLine());
-        System.out.println("");
+        System.out.println();
 
         String prog = "";
         if (op ==  1){
@@ -62,9 +62,8 @@ public class CalculaProgressao {
                     }
                 }
             }
-            default -> {
+            default ->
                 System.out.println("Opção inválida, tente novamente");
-            }
         }
 
     }
