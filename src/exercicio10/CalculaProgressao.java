@@ -33,16 +33,15 @@ public class CalculaProgressao {
         String prog = "";
         if (op ==  1){
             prog = "P.A.";
-        } else{
+        } else if (op == 2){
             prog = "P.G.";
         }
 
         int res = num;
 
-        System.out.printf("Valor inicial = %d; razão = %d; %s = %d, ", num, razao, prog, res);
-
         switch (op){
             case 1 -> {
+                System.out.printf("Valor inicial = %d; razão = %d; %s = %d, ", num, razao, prog, res);
                 for (int i = num; i < 10; i++){
                     res += razao;
                     if (i<9) {
@@ -53,6 +52,7 @@ public class CalculaProgressao {
                 }
             }
             case 2 -> {
+                System.out.printf("Valor inicial = %d; razão = %d; %s = %d, ", num, razao, prog, res);
                 for (int i = num; i < 10; i++){
                     res *= razao;
                     if (i<9) {
